@@ -85,7 +85,7 @@ nav li a{
 
 .banner{
     display: flex;
-    justify-content: space-betweeni;
+    justify-content: flex-end;
     margin: 0 35px 0 230px;
 }
 
@@ -111,6 +111,10 @@ nav li a{
 .banner-picture{
     height: 676px;
     width: 584px; 
+    /* position: absolute;
+    bottom: 0px;
+    right: 0px; */
+
       
 }
 
@@ -132,7 +136,7 @@ main{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    /* margin-top: 130px; */
+    margin-top: 130px;
 }
 
 .about-items{
