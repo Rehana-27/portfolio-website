@@ -86,7 +86,7 @@ nav li a{
 .banner{
     display: flex;
     justify-content: flex-end;
-    margin: 0 35px 0 230px;
+    margin: 0 35px 0 200px;
 }
 
 .banner-content{
@@ -109,7 +109,7 @@ nav li a{
     color: #757575;
 }
 .banner-picture{
-    height: 676px;
+    /* height: 676px; */
     width: 584px; 
     /* position: absolute;
     bottom: 0px;
@@ -200,7 +200,7 @@ hr{
     color: #757575;
 }
 .resume-download-cv{
-    margin: 50px 420px 110px 470px;
+    margin: 50px 42px 110px 47px;
 }
 
 /* footer style */
@@ -215,22 +215,22 @@ footer{
 }
 footer input[type="text"], footer input[type="email"] {
     height: 64px;
-    width: 460px;
+    width: 250px;
     border-radius: 5px;
     border: none;
     display: block;
-    padding: 18px 350px 18px 30px;
+    padding: 18px 35px 18px 30px;
     font-size: 16px;
     color: #757575;
     margin-bottom: 25px;
 }
 footer textarea{
     height: 180px;
-    width: 460px;
+    width: 250px;
     border-radius: 5px;
     border: none;
     display: block;
-    padding: 18px 350px 18px 30px;
+    padding: 18px 35px 18px 30px;
     font-size: 16px;
     color: #757575;
     margin-bottom: 25px;
@@ -240,3 +240,47 @@ footer textarea{
 
 /* responsive area */
 
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container, 
+    .resume-container, 
+    footer, 
+    .about-items,
+    .banner,
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+
+    nav > ul{
+        gap: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+
+    .banner-picture{
+        width: 100%;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
